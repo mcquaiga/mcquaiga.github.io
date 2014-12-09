@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" manifest='manifest.appcache'>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0">
+	<title>Home</title>
+	
+	<!-- 
+	
+	if we've already go a user account, we want to welcome the user, 
+	otherwise, prompt them to create a new account
+	
+	if the user has saved photos, we want to show them in the list
+	if the user selects a saved photo, we want to let them edit it
+	
+	-->
+	
+	<script src="js/app.js"></script>
+	
+<link rel="stylesheet" type="text/css" href="style/style.css"  />	
+
+</head>
+<body id="homescreen">
+
+<h1>Slowstagram</h1>
+
+<section id="welcome">
+	<h2>
+		<span id="welcome-message">Welcome</span>
+		<span id="username"> <!-- show this if there's a user name--> </span>
+	</h2>
+	
+	<p><button id="edit-account">Edit Account</button></p>
+
+</section>
+
+<section id="account-options">
+<!-- don't show this if there's no existing account-->
+<h2>You're new here, why not create an account?</h2>
+<p><button id="create-account">Create Account</button></p>
+</section>
+
+<section id="photos">
+<h2>Your photos</h2>
+
+<ul id="thePhotos">
+ <!-- this gets populated with a list of photos that have been taken and edited-->
+</ul>
+
+</section>
+
+<ul class="editing-options">
+	<li><button id="edit-photo" type="button" disabled>Edit</button></li>
+	<li><button id="delete-photo" type="button" disabled>Delete</button></li>
+	<li><button id="new-photo" type="button">New</button></li>
+	<li><button id="upload" type="button" disabled>Upload</button></li>
+</ul>
+
+</body>
+</html>

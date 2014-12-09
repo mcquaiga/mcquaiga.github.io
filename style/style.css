@@ -1,0 +1,187 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*end meyer reset*/
+ 
+body {font-family: 'Helvetica Neue', Helvetica, Arial, san-serif;
+font-size: 16px;
+font-weight: 200;
+margin: 0 auto;
+padding: 0 3% 2em 3%;}
+
+
+.selectedPhoto {background-color: #cccccc}
+
+input[type=file] {visibility: hidden}
+
+#the-photo {width: 100%;
+min-height: 100px;
+max-height: 300px;
+display: block;
+overflow: auto}
+
+h1 {font-size: 2em;
+text-align: center; 
+margin: .5em 0}
+
+#welcome {
+font-size: 1em;
+margin: .5em 0}
+
+#welcome h2{
+font-size: 1.4em;
+}
+
+#welcome p {display: none}
+
+h2{
+font-size: 1.2em;
+margin: .5em 0}
+
+#account-options {
+margin: .5em 0}
+
+p {
+margin: .5em 0}
+
+button {-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+font-size: 1em;
+background-color: #a6cafe;
+font-weight: 100;
+border: none;
+padding: .5em 0}
+
+.editing-options {margin-top: 1.5em;
+position: fixed;
+bottom: 0;
+background-color: #fff;
+width: 100%;
+left: 0}
+
+.editing-options li {display: inline-block;
+width: 50%;
+font-size: 1em;
+text-align: center;
+margin: 0;
+float: left
+}
+
+#homescreen .editing-options li {
+width:25%}
+
+.editing-options li button {
+padding: .5em 0;
+margin: 0}
+
+#thePhotos {
+overflow: auto}
+
+#thePhotos li{
+height: 2.5em;
+border-bottom: solid 1px #dedede;
+line-height: 2.3em
+}
+
+#thePhotos li span, #thePhotos li img {
+display: inline-block;
+margin-right: 1em;
+vertical-align: middle}
+
+#thePhotos img {height: 2em;}
+
+
+input, textarea {-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+font-size: 1em;
+font-family: inherit;
+border: solid 1px #dedede;
+font-weight: 200;
+width: 49%;
+padding: .2em;
+vertical-align: middle}
+
+label {width: 22%;
+margin-right: 2%;
+display: inline-block;
+text-align: right; 
+vertical-align: middle}
+
+#photo-details li {margin-bottom: .5em}
+
+button {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #378de5) );
+	background:-moz-linear-gradient( center top, #79bbff 5%, #378de5 100% );
+	background-color:#79bbff;
+	text-indent:0;
+	display:inline-block;
+	color:#fff;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #528ecc;
+	width: 100%;
+	font-weight: 100
+}
+
+button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff) );
+	background:-moz-linear-gradient( center top, #378de5 5%, #79bbff 100% );
+	background-color:#378de5;
+
+}
+
+button:active {
+	position:relative;
+	top:1px;
+}
+
+button:disabled {opacity: .5}
+/* This button was generated using CSSButtonGenerator.com */

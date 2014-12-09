@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" manifest='manifest.appcache'>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0">
+
+	<title>New Account</title>
+	
+	<!-- 
+	
+	here we want to save the details to localStorage, to be reused later
+	
+	-->
+		<script src="js/app.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style/style.css"  />	
+
+</head>
+<body>
+
+<h1>Create an Account</h1>
+
+<form>
+<h2>Account Details</h2>
+
+<ul>
+	<li><label for="username">name</label><input type="text" id="username" placeholder="user name"></li>
+	<li><label for="email">email address</label><input type="email" id="email"></li>
+	<li><label for="password">password</label><input type="password" id="password"></li>
+	<li><label for="verify-password">verify password</label><input type="password" id="verify-password"></li>
+</ul>
+
+
+</form>
+
+<ul class="editing-options">
+	<li><button id="create-new-account" disabled type="button">Create Account</button></li>
+	<li><button id="cancel-new-account" type="button">Cancel</button></li>
+</ul>
+
+
+</body>
+</html>

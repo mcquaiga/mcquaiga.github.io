@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" manifest='manifest.appcache'>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0">
+	<title>Edit Photo</title>
+
+	<script src="js/app.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style/style.css"  />	
+
+</head>
+<body>
+<h1>Edit Photo</h1>
+
+<!-- <canvas id="the-photo"></canvas> -->
+
+<img src='' id="the-photo">
+
+<p><button id="get-photo" type="button">New Photo</button><input type="file" accept="image/*" capture="camera" id="take-photo"></p>
+
+<form id="photo-details">
+	<ul>
+		<li><label for="title">title</label><input type="text" id="title"></li>
+		<li><label for="description">description</label><textarea id="description"></textarea></li>
+		<li><label for="date">date</label><input type="date" id="date"></li>
+		<li><label for="size">size</label><output id="size"></putput></li>
+		<li><label for="tags">tags</label><input type="text" id="tags"></li>
+		<li><label for="location">location</label><output id="location"></output></li>
+	</ul>
+
+</form>
+
+	<ul class="editing-options">
+		<li><button id="save-photo" type="button" disabled>Save Changes</button></li>
+		<li><button id="cancel" type="button">Cancel</button></li>
+	</ul>
+
+
+</body>
+</html>
